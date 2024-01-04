@@ -23,10 +23,10 @@ def click(x, y)
   User32.mouse_event(AutoClicker::MOUSEEVENTF_LEFTUP, x, y, 0, 0, 0)
 end
 
-sleep(5)
+sleep(5) # How long it takes to kick in
 
 # Example: Click at coordinates (500, 500) 10 times with a 1-second pause between clicks
-1000.times do
+1000.times do # How many clicks it does
   click(500, 500)
-  sleep(0.000001)  # Pause for 1 second between clicks
+  sleep(0.000001)  # How long before each click
 end
